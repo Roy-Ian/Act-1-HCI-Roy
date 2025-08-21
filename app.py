@@ -2,9 +2,9 @@ from flask import Flask, render_template, request, redirect, url_for, flash, ses
 from markupsafe import escape
 
 app = Flask(__name__)
-app.secret_key = "super-secret-key"  # Required for flash messages & sessions
+app.secret_key = "super-secret-key" 
 
-# Fake user database (demo only)
+# For the char ng acc hahaha
 users = {
     "rai@gmail.com": "PasswordNi"
 }
@@ -42,3 +42,4 @@ def logout():
 
 if __name__ == "__main__":
     app.run(debug=True)
+
