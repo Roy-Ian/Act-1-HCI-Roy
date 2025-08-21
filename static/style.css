@@ -1,0 +1,134 @@
+body {
+  margin: 0;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background: radial-gradient(circle at top, #0d0d0d, #1a1a1a 60%, #000000);
+  color: #e0e0e0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.card {
+  background: rgba(20, 20, 20, 0.9);
+  padding: 25px;
+  border-radius: 12px;
+  box-shadow: 0 0 25px rgba(0, 0, 0, 0.8), 
+              0 0 15px rgba(100, 0, 200, 0.4);
+  width: 320px;
+  text-align: center;
+  border: 1px solid rgba(120, 0, 180, 0.3);
+}
+
+h1 {
+  margin: 0 0 10px 0;
+  font-size: 1.8em;
+  color: #c084fc; /* mystical purple glow */
+  text-shadow: 0 0 8px rgba(192, 132, 252, 0.8);
+}
+
+.card p {
+  margin: 0 0 20px 0;
+  color: #a1a1aa;
+}
+
+.field {
+  margin-bottom: 15px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  width: 100%;
+}
+
+label {
+  font-weight: bold;
+  margin-bottom: 5px;
+  color: #cfcfcf;
+}
+
+input {
+  width: 100%;
+  max-width: 300px;
+  padding: 10px;
+  border: 1px solid #3f3f46;
+  border-radius: 6px;
+  box-sizing: border-box;
+  background: #111;
+  color: #e0e0e0;
+}
+
+input:focus {
+  outline: none;
+  border: 1px solid #8b5cf6;
+  box-shadow: 0 0 8px #8b5cf6;
+}
+
+/* ✅ Password + show/hide button */
+.password-wrapper {
+  position: relative;
+  width: 100%;
+  max-width: 300px;
+}
+
+.password-wrapper input {
+  width: 100%;
+  padding: 10px;
+  padding-right: 60px; /* reserve space for the button */
+  border: 1px solid #3f3f46;
+  border-radius: 6px;
+  box-sizing: border-box;
+  background: #111;
+  color: #e0e0e0;
+}
+
+.password-wrapper button {
+  position: absolute;
+  right: 10px;
+  top: 50%;
+  transform: translateY(-50%);
+  background: none;
+  border: none;
+  color: #8b5cf6;
+  font-weight: bold;
+  font-size: 0.9em;
+  cursor: pointer;
+  padding: 0;
+  line-height: 1;
+  height: auto;
+  text-shadow: 0 0 5px #8b5cf6;
+}
+
+button.btn {
+  width: 100%;
+  padding: 12px;
+  background: linear-gradient(135deg, #5b21b6, #312e81);
+  color: white;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  font-weight: bold;
+  transition: all 0.3s ease;
+  text-shadow: 0 0 6px rgba(0,0,0,0.6);
+}
+
+button.btn:hover {
+  background: linear-gradient(135deg, #7c3aed, #4338ca);
+  box-shadow: 0 0 12px #7c3aed;
+}
+
+.error {
+  color: #f87171;
+  font-size: 0.9em;
+  text-align: left;
+}
+
+.alert {
+  padding: 10px;
+  margin-bottom: 10px;
+  border-radius: 5px;
+  text-align: left;
+}
+
+.alert.success { background: rgba(16, 185, 129, 0.15); color: #34d399; }
+.alert.error   { background: rgba(239, 68, 68, 0.15);  color: #f87171; }
+.alert.info    { background: rgba(59, 130, 246, 0.15); color: #60a5fa; }
